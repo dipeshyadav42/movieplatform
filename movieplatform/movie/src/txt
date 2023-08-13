@@ -1,0 +1,9 @@
+<div className="card mt-2 mb-3 bg-secondary" key={result._id}>
+<img src={`./images/${result.img}`} style={{width:'80px'}} alt=""  />
+  <div className="card-body">
+    <h5 className="card-title">{result.name}</h5>
+    <p className="card-text" style={{fontFamily:'sans-serif'}}>{result.desc}</p>
+    Movie Type:{result.type}
+    <Link to="" className="btn btn-primary" style={{marginLeft:'250px'}}>Update</Link>
+    <button className="btn btn-success" onClick={(e)=>{handledelete(e,result._id)}} style={{marginLeft:'380px'}}>Delete</button>  </div>
+</div>
